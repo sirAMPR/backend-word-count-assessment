@@ -56,7 +56,7 @@ def print_top(filename):
     word_dict = create_word_dict(filename)
     sorted_word_dict = {k: v for k, v in sorted(
         word_dict.items(), key=lambda item: item[1], reverse=True)}
-    for word in list(sorted_word_dict)[:20]:
+    for word in list(sorted_word_dict):
         print(f"{word} : {sorted_word_dict[word]}")
 
 # This basic command line argument parsing code is provided and calls
